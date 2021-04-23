@@ -20,14 +20,14 @@ export class LoginComponent implements OnInit {
   }
   onSubmit(userForm:any)
   {
-    //console.log(userForm);
+    //console.log(userForm.value);
     this.enroll(userForm).subscribe((data: any)=>console.log("success",data));
 
   }
 
   enroll(user:any):Observable<any>
   {
-    return this._http.post('http://localhost:4000/form',user);
+    return this._http.post('http://localhost:4000/data',user);
   }
 
 

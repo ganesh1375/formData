@@ -1,258 +1,343 @@
-<div class="container">
-    <div class="row">
-        <div class="col-12 bg-success">
-            <h2 class="text-center text-white p-2">
-                Virtual WorkShop Regstraton Form <br>
-                <footer><small>Type a subscriber</small> </footer>
-            </h2>
+<div class="main" style="">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 bg-success">
+                <h2 class="text-center text-white p-2">
+                    Virtual WorkShop Regstraton Form <br>
+                    <footer><small>Type a subscriber</small> </footer>
+                </h2>
 
+            </div>
+        </div>
+        <hr>
+    </div>
+    <div class="container border pb-2 p-2 bg-light">
+        <div class="row">
+            <div class="col-md-6 col-12 ">
+                <p class="text-dark" style="font-size: 20px;">Join the 3 day web development <br>virtual workshop
+                    <br>become
+                    a hirable freelancer
+                </p>
+
+                <p class="text-dark" style="font-size: 20px;">Participation Fee $500</p>
+                <p class="text-dark" style="font-size: 20px;">Limited Slots.. Reserve One!</p>
+            </div>
+            <div class="col-md-3 col-6">
+                <p class="text-dark" style="font-size: 20px;">May1-3</p>
+                <p class="text-dark" style="font-size: 20px;">May 15-18</p>
+                <p class="text-dark" style="font-size: 20px;">june 1-3</p>
+                <p class="text-dark" style="font-size: 20px;">june 15-18</p>
+                <p class="text-dark" style="font-size: 20px;">july 1-3</p>
+                <p class="text-dark" style="font-size: 20px;">july 15-18</p>
+            </div>
+            <div class="col-md-3 col-6">
+                <p class="text-dark" style="font-size: 20px;">9:00AM - 1:00 PM EST</p>
+                <p class="text-dark" style="font-size: 20px;">9:00AM - 1:00 PM EST</p>
+                <p class="text-dark" style="font-size: 20px;">9:00AM - 1:00 PM EST</p>
+                <p class="text-dark" style="font-size: 20px;">9:00AM - 1:00 PM EST</p>
+                <p class="text-dark" style="font-size: 20px;">9:00AM - 1:00 PM EST</p>
+                <p class="text-dark" style="font-size: 20px;">9:00AM - 1:00 PM EST</p>
+            </div>
         </div>
     </div>
-    <hr>
-</div>
-<div class="container border pb-2 p-2">
-    <div class="row">
-        <div class="col-6">
-            <p class="text-dark" style="font-size: 20px;">Join the 3 day web development <br>virtual workshop <br>become
-                a hirable freelancer</p>
+    <div class="container mt-2 border p-2">
+        <div class="row">
+            <div class="col-12">
+                <h5 class="text-dark">Please rate Your Web development Knowledge</h5>
 
-            <p class="text-dark" style="font-size: 20px;">Participation Fee $500</p>
-            <p class="text-dark" style="font-size: 20px;">Limited Slots.. Reserve One!</p>
-        </div>
-        <div class="col-3">
-            <p class="text-dark" style="font-size: 20px;">May1-3</p>
-            <p class="text-dark" style="font-size: 20px;">May 15-18</p>
-            <p class="text-dark" style="font-size: 20px;">june 1-3</p>
-            <p class="text-dark" style="font-size: 20px;">june 15-18</p>
-            <p class="text-dark" style="font-size: 20px;">july 1-3</p>
-            <p class="text-dark" style="font-size: 20px;">july 15-18</p>
-        </div>
-        <div class="col-3">
-            <p class="text-dark" style="font-size: 20px;">9:00AM - 1:00 PM EST</p>
-            <p class="text-dark" style="font-size: 20px;">9:00AM - 1:00 PM EST</p>
-            <p class="text-dark" style="font-size: 20px;">9:00AM - 1:00 PM EST</p>
-            <p class="text-dark" style="font-size: 20px;">9:00AM - 1:00 PM EST</p>
-            <p class="text-dark" style="font-size: 20px;">9:00AM - 1:00 PM EST</p>
-            <p class="text-dark" style="font-size: 20px;">9:00AM - 1:00 PM EST</p>
-        </div>
-    </div>
-</div>
-<div class="container mt-2 border p-2">
-    <div class="row">
-        <div class="col-12">
-            <h5 class="text-dark">Please rate Your Web development Knowledge</h5>
-
-            <form #userForm="ngForm" (ngSubmit)="onSubmit(userForm)">
-                <div class="custom-control custom-checkbox  pt-2">
-                    <input type="checkbox"[ngModel] class="custom-control-input" id="customCheck"
-                        name="I don't have any idea at all">
-                    <label class="custom-control-label" for="customCheck">I don't have any idea at all</label>
-                </div>
-                <div class="custom-control custom-checkbox  pt-2">
-                    <input type="checkbox" [ngModel] class="custom-control-input" id="customCheck1"
-                        name="i'm noobie in web development">
-                    <label class="custom-control-label" for="customCheck1">i'm noobie in web development</label>
-                </div>
-                <div class="custom-control custom-checkbox  pt-2">
-                    <input type="checkbox" [ngModel] class="custom-control-input" id="customCheck2"
-                        name="Wactched webdevelpoment tutorials">
-                    <label class="custom-control-label" for="customCheck2">Wactched webdevelpoment tutorials</label>
-                </div>
-                <div class="custom-control custom-checkbox  pt-2 ">
-                    <input type="checkbox" [ngModel] class="custom-control-input" id="customCheck3" name="I have some Experince">
-                    <label class="custom-control-label" for="customCheck3">I have some Experince</label>
-                </div>
-                <div class="custom-control custom-checkbox pt-2">
-                    <input type="checkbox" [ngModel] class="custom-control-input" id="customCheck4"
-                        name="'m currently Working  as a web developer and imporve">
-                    <label class="custom-control-label" for="customCheck4">I'm currently Working as a web developer and
-                        imporve</label>
-                </div>
-
-
-                <div class="container mt-5 border p-2">
-                    <h5>I would like to Learn..</h5>
-                    <div class="row">
-                        <div class="col-6">
-
-                            <div class="custom-control custom-checkbox pt-2">
-                                <input type="checkbox" [ngModel] class="custom-control-input" id="customCheck6" name="HTML">
-                                <label class="custom-control-label" for="customCheck6">HTML</label>
-                            </div>
-                            <div class="custom-control custom-checkbox pt-2">
-                                <input type="checkbox" [ngModel] class="custom-control-input" id="customCheck7" name="CSS">
-                                <label class="custom-control-label" for="customCheck7">CSS</label>
-                            </div>
-                            <div class="custom-control custom-checkbox pt-2">
-                                <input type="checkbox" [ngModel] class="custom-control-input" id="customCheck8" name="js">
-                                <label class="custom-control-label" for="customCheck8">JS</label>
-                            </div>
-                            <div class="custom-control custom-checkbox pt-2">
-                                <input type="checkbox" [ngModel] class="custom-control-input" id="customCheck9" name="Database">
-                                <label class="custom-control-label" for="customCheck9">Database</label>
-                            </div>
-                            <div class="custom-control custom-checkbox pt-2">
-                                <input type="checkbox"[ngModel] class="custom-control-input" id="customCheck10" name="PHP">
-                                <label class="custom-control-label" for="customCheck10">PHP</label>
-                            </div>
-                        </div>
-                        <div class="col-6">
-
-                            <div class="custom-control custom-checkbox pt-2">
-                                <input type="checkbox" [ngModel] class="custom-control-input" id="customCheck11" name="wordpress">
-                                <label class="custom-control-label" for="customCheck11">Wordpress</label>
-                            </div>
-                            <div class="custom-control custom-checkbox pt-2">
-                                <input type="checkbox" [ngModel] class="custom-control-input" id="customCheck12" name="ruby">
-                                <label class="custom-control-label" for="customCheck12">Ruby</label>
-                            </div>
-                            <div class="custom-control custom-checkbox pt-2">
-                                <input type="checkbox" [ngModel] class="custom-control-input" id="customCheck13" name="Python">
-                                <label class="custom-control-label" for="customCheck13">Python</label>
-                            </div>
-                            <div class="custom-control custom-checkbox pt-2">
-                                <input type="checkbox" [ngModel] class="custom-control-input" id="customCheck14" name="DevOps">
-                                <label class="custom-control-label" for="customCheck14">DevOps</label>
-                            </div>
-                            <div class="custom-control custom-checkbox pt-2">
-                                <input type="checkbox"  [ngModel] class="custom-control-input" id="customCheck15" name="front-end">
-                                <label class="custom-control-label" for="customCheck15">Front-end</label>
-                            </div>
-
-                        </div>
+                <form #userForm="ngForm" (ngSubmit)="onSubmit(userForm.value)" novalidate>
+                    <div class="custom-control custom-checkbox  pt-2">
+                        <input type="checkbox" [ngModel] class="custom-control-input" id="customCheck"
+                            name="I don't have any idea at all">
+                        <label class="custom-control-label" for="customCheck">I don't have any idea at all</label>
                     </div>
-                </div>
-                <br>
-                <br>
-                <br>
+                    <div class="custom-control custom-checkbox  pt-2">
+                        <input type="checkbox" [ngModel] class="custom-control-input" id="customCheck1"
+                            name="i'm noobie in web development">
+                        <label class="custom-control-label" for="customCheck1">i'm noobie in web development</label>
+                    </div>
+                    <div class="custom-control custom-checkbox  pt-2">
+                        <input type="checkbox" [ngModel] class="custom-control-input" id="customCheck2"
+                            name="Wactched webdevelpoment tutorials">
+                        <label class="custom-control-label" for="customCheck2">Wactched webdevelpoment tutorials</label>
+                    </div>
+                    <div class="custom-control custom-checkbox  pt-2 ">
+                        <input type="checkbox" [ngModel] class="custom-control-input" id="customCheck3"
+                            name="I have some Experince">
+                        <label class="custom-control-label" for="customCheck3">I have some Experince</label>
+                    </div>
+                    <div class="custom-control custom-checkbox pt-2">
+                        <input type="checkbox" [ngModel] class="custom-control-input" id="customCheck4"
+                            name="'m currently Working  as a web developer and imporve">
+                        <label class="custom-control-label" for="customCheck4">I'm currently Working as a web developer
+                            and
+                            imporve</label>
+                    </div>
 
 
-                <div class="container pb-4 border">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="col-12 bg-success">
-                                <h2 class="text-center text-white p-2">
-                                    Participation Page
-                                </h2>
+                    <div class="container mt-5 border p-2">
+                        <h5>I would like to Learn..</h5>
+                        <div class="row">
+                            <div class="col-6">
+
+                                <div class="custom-control custom-checkbox pt-2">
+                                    <input type="checkbox" [ngModel] class="custom-control-input" id="customCheck6"
+                                        name="HTML">
+                                    <label class="custom-control-label" for="customCheck6">HTML</label>
+                                </div>
+                                <div class="custom-control custom-checkbox pt-2">
+                                    <input type="checkbox" [ngModel] class="custom-control-input" id="customCheck7"
+                                        name="CSS">
+                                    <label class="custom-control-label" for="customCheck7">CSS</label>
+                                </div>
+                                <div class="custom-control custom-checkbox pt-2">
+                                    <input type="checkbox" [ngModel] class="custom-control-input" id="customCheck8"
+                                        name="js">
+                                    <label class="custom-control-label" for="customCheck8">JS</label>
+                                </div>
+                                <div class="custom-control custom-checkbox pt-2">
+                                    <input type="checkbox" [ngModel] class="custom-control-input" id="customCheck9"
+                                        name="Database">
+                                    <label class="custom-control-label" for="customCheck9">Database</label>
+                                </div>
+                                <div class="custom-control custom-checkbox pt-2">
+                                    <input type="checkbox" [ngModel] class="custom-control-input" id="customCheck10"
+                                        name="PHP">
+                                    <label class="custom-control-label" for="customCheck10">PHP</label>
+                                </div>
+                            </div>
+                            <div class="col-6">
+
+                                <div class="custom-control custom-checkbox pt-2">
+                                    <input type="checkbox" [ngModel] class="custom-control-input" id="customCheck11"
+                                        name="wordpress">
+                                    <label class="custom-control-label" for="customCheck11">Wordpress</label>
+                                </div>
+                                <div class="custom-control custom-checkbox pt-2">
+                                    <input type="checkbox" [ngModel] class="custom-control-input" id="customCheck12"
+                                        name="ruby">
+                                    <label class="custom-control-label" for="customCheck12">Ruby</label>
+                                </div>
+                                <div class="custom-control custom-checkbox pt-2">
+                                    <input type="checkbox" [ngModel] class="custom-control-input" id="customCheck13"
+                                        name="Python">
+                                    <label class="custom-control-label" for="customCheck13">Python</label>
+                                </div>
+                                <div class="custom-control custom-checkbox pt-2">
+                                    <input type="checkbox" [ngModel] class="custom-control-input" id="customCheck14"
+                                        name="DevOps">
+                                    <label class="custom-control-label" for="customCheck14">DevOps</label>
+                                </div>
+                                <div class="custom-control custom-checkbox pt-2">
+                                    <input type="checkbox" [ngModel] class="custom-control-input" id="customCheck15"
+                                        name="front-end">
+                                    <label class="custom-control-label" for="customCheck15">Front-end</label>
+                                </div>
+
                             </div>
                         </div>
                     </div>
-                    <!-- {{userForm.value|json}} -->
-                    <div class="row ">
-                        <div class="col-12">
+                    <br>
+                    <br>
+                    <br>
 
-                            <p>Name</p>
-                            <div class="form-row">
-                                <div class="col">
-                                    <input type="text" class="form-control" id="firstname" placeholder="Enter firstname"
-                                        [ngModel] name="firstname">
+
+                    <div class="container pb-4 border">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="col-12 bg-success">
+                                    <h2 class="text-center text-white p-2">
+                                        Participation Page
+                                    </h2>
                                 </div>
-                                <div class="col">
-                                    <input type="text" [ngModel] class="form-control" placeholder="Enter Last name"
-                                        name="lastname">
-                                </div>
                             </div>
-                            <hr>
-                            <p>Phone Number</p>
-                            <div class="form-group">
-                                <!-- <label for="phone">Phone:</label> -->
-                                <input type="tel" class="form-control" [ngModel] pattern="^[1-9][0-9]{9}$"
-                                    placeholder="Enter Phone Number" id="phone" name="phone" required>
-                            </div>
-                            <hr>
-                            <p>Email</p>
-                            <div class="form-group">
-                                <input type="email" name="email" [ngModel] class="form-control"
-                                    placeholder="Enter email" id="email">
-                            </div>
-                            <hr>
-                            <p>Occupation</p>
-                            <div class="form-group">
-                                <input type="text" class="form-control" [ngModel] placeholder="Occupation" id="op"
-                                    name="occupation">
-                                <small>optional /current/previous</small>
-                            </div>
-                            <p>Comapany Name</p>
-                            <div class="form-group">
-                                <input type="text" class="form-control" [ngModel] placeholder="company name" id="op1"
-                                    name="companyname">
-                                <small>optional /current/previous</small>
-                            </div>
-                            <p>Job title</p>
-                            <div class="form-group">
-                                <input type="text" class="form-control" [ngModel] placeholder="jobtitle" id="op2"
-                                    name="jobtitle">
-                                <small>optional /current/previous</small>
-                            </div>
+                        </div>
+                        <!-- {{userForm.value|json}} -->
+                        <div class="row ">
+                            <div class="col-12">
 
-
-
-                            <div class="container mt-4 pb-4">
-                                <div class="row">
-                                    <div class="col-12 bg-success">
-                                        <h2 class="text-center text-white p-2">
-                                            Payment Information
-                                        </h2>
+                                <p>Name</p>
+                                <div class="form-row">
+                                    <div class="col">
+                                        <input type="text" class="form-control" id="firstname"
+                                            placeholder="Enter firstname" [ngModel] name="firstname" #fname="ngModel"
+                                            required [class.is-invalid]="fname.invalid && fname.touched">
+                                        <small class="text-danger" *ngIf="fname.invalid && fname.touched">Firstname is
+                                            required</small>
+                                    </div>
+                                    <div class="col">
+                                        <input type="text" [ngModel] class="form-control" placeholder="Enter Last name"
+                                            name="lastname" #lname="ngModel" required
+                                            [class.is-invalid]="lname.invalid && lname.touched">
+                                        <small class="text-danger" *ngIf="lname.invalid && lname.touched">Lastname is
+                                            required</small>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="container border p-3">
-                                <h4>Workshop Dates</h4>
-                                <div class="row">
-                                    <div class="col-6">
-
-                                        <div class="custom-control custom-checkbox pt-2">
-                                            <input type="checkbox" [ngModel] class="custom-control-input"
-                                                id="customCheck16" name="May 1-3">
-                                            <label class="custom-control-label" for="customCheck16">May 1-3</label>
-                                        </div>
-                                        <div class="custom-control custom-checkbox pt-2">
-                                            <input type="checkbox" [ngModel] class="custom-control-input"
-                                                id="customCheck17" name="june 1-3">
-                                            <label class="custom-control-label" for="customCheck17">June 1-3</label>
-                                        </div>
-                                        <div class="custom-control custom-checkbox pt-2">
-                                            <input type="checkbox" [ngModel] class="custom-control-input"
-                                                id="customCheck18" name="july 1-3">
-                                            <label class="custom-control-label" for="customCheck18">july 1-3</label>
-                                        </div>
-
-                                    </div>
-                                    <div class="col-6">
-
-                                        <div class="custom-control custom-checkbox pt-2">
-                                            <input type="checkbox" [ngModel] class="custom-control-input"
-                                                id="customCheck19" name="May 15-18">
-                                            <label class="custom-control-label" for="customCheck19">May 15-18</label>
-                                        </div>
-                                        <div class="custom-control custom-checkbox pt-2">
-                                            <input type="checkbox" [ngModel] class="custom-control-input"
-                                                id="customCheck20" name="june 15-18">
-                                            <label class="custom-control-label" for="customCheck20">June 15-18</label>
-                                        </div>
-                                        <div class="custom-control custom-checkbox pt-2">
-                                            <input type="checkbox" [ngModel] class="custom-control-input"
-                                                id="customCheck21" name="july 15-18">
-                                            <label class="custom-control-label" for="customCheck21">july 15-18</label>
-                                        </div>
-
+                                <hr>
+                                <p>Phone Number</p>
+                                <div class="form-group">
+                                    <!-- <label for="phone">Phone:</label> -->
+                                    <input type="tel" class="form-control" #phone="ngModel" [ngModel]
+                                        pattern="^[1-9][0-9]{9}$" placeholder="Enter Phone Number" id="phone"
+                                        name="phone" [class.is-invalid]="phone.invalid && phone.touched" required>
+                                    <div *ngIf="phone.invalid && phone.touched && phone.errors">
+                                        <small class="text-danger" *ngIf="phone.errors.required">Phone number is
+                                            required</small>
+                                        <small class="text-danger" *ngIf="phone.errors.pattern">Phone number must be
+                                            valid</small>
                                     </div>
                                 </div>
-                            </div>
-
-
-                            <div class="container mt-4 pb-5 text-center">
-                                <div class="row">
-                                    <div class="col-12">
-                                        <button class="btn btn-success" type="submit">Register</button>
+                                <hr>
+                                <p>Email</p>
+                                <div class="form-group">
+                                    <input type="email" name="email" [ngModel] class="form-control" #email="ngModel"
+                                        required placeholder="Enter email" id="email"
+                                        [class.is-invalid]="email.invalid && email.touched"
+                                        pattern="/^[^\d]([a-z\d\.-])+@([a-z\d]+)\.([a-z]{2,3})(\.[a-z]{2,8})?$/">
+                                    <div *ngIf="email.invalid && email.touched && email.errors">
+                                        <small class="text-danger" *ngIf="email.errors.required">Email is
+                                            required</small>
+                                        <small class="text-danger" *ngIf="email.errors.pattern">Email must be
+                                            valid</small>
                                     </div>
                                 </div>
-                            </div>
+                                <hr>
+                                <p>Occupation</p>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" [ngModel] placeholder="Occupation" id="op"
+                                        name="occupation">
+                                    <small>optional /current/previous</small>
+                                </div>
+                                <p>Comapany Name</p>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" [ngModel] placeholder="company name"
+                                        id="op1" name="companyname">
+                                    <small>optional /current/previous</small>
+                                </div>
+                                <p>Job title</p>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" [ngModel] placeholder="jobtitle" id="op2"
+                                        name="jobtitle">
+                                    <small>optional /current/previous</small>
+                                </div>
 
+
+
+                                <div class="container mt-4 pb-4">
+                                    <div class="row">
+                                        <div class="col-12 bg-success">
+                                            <h2 class="text-center text-white p-2">
+                                                Payment Information
+                                            </h2>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="container border p-3">
+                                    <h4>Workshop Dates</h4>
+                                    <div class="row">
+                                        <div class="col-6">
+
+                                            <div class="custom-control custom-checkbox pt-2">
+                                                <input type="checkbox" [ngModel] class="custom-control-input"
+                                                    id="customCheck16" name="May 1-3">
+                                                <label class="custom-control-label" for="customCheck16">May 1-3</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox pt-2">
+                                                <input type="checkbox" [ngModel] class="custom-control-input"
+                                                    id="customCheck17" name="june 1-3">
+                                                <label class="custom-control-label" for="customCheck17">June 1-3</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox pt-2">
+                                                <input type="checkbox" [ngModel] class="custom-control-input"
+                                                    id="customCheck18" name="july 1-3">
+                                                <label class="custom-control-label" for="customCheck18">july 1-3</label>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-6">
+
+                                            <div class="custom-control custom-checkbox pt-2">
+                                                <input type="checkbox" [ngModel] class="custom-control-input"
+                                                    id="customCheck19" name="May 15-18">
+                                                <label class="custom-control-label" for="customCheck19">May
+                                                    15-18</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox pt-2">
+                                                <input type="checkbox" [ngModel] class="custom-control-input"
+                                                    id="customCheck20" name="june 15-18">
+                                                <label class="custom-control-label" for="customCheck20">June
+                                                    15-18</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox pt-2">
+                                                <input type="checkbox" [ngModel] class="custom-control-input"
+                                                    id="customCheck21" name="july 15-18">
+                                                <label class="custom-control-label" for="customCheck21">july
+                                                    15-18</label>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="container mt-4 p-3">
+                                    <div class="row">
+                                        <h4>Please Select Your Payment Method</h4>
+                                        <div class="col-8">
+                                            <select name="payment" [class.is-invalid]="select.invalid && select.touched"
+                                                #select="ngModel" required [ngModel] class="custom-select">
+                                                <option selected value=""></option>
+                                                <option value="phonepay">Phone Pay</option>
+                                                <option value="googlepay">Google Pay</option>
+                                                <option value="paytm">Paytm</option>
+                                                <option value="Mobikwik">Mobikwik</option>
+                                                <option value="Netbanking">Netbanking</option>
+                                            </select>
+                                            <div *ngIf="select.invalid && select.touched">
+                                                <small class="text-danger">Please Choose Method
+                                                </small>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="form-check" style="font-size: large;">
+                                                <label class="form-check-label">
+                                                    <input type="radio" required #radio="ngModel"
+                                                        [class.is-invalid]="radio.invalid && radio.touched" [ngModel]
+                                                        class="form-check-input" name="fee" value="200">Participation
+                                                    Fee $200
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <div class="container">
+                                    <div class="row">
+                                        <h4>Please Select Your Payment Method</h4>
+                                        <div class="col-12">
+                                            <select name="payment" class="custom-select">
+                                                <option selected value=""></option>
+                                                <option value="phonepay">Phone Pay</option>
+                                                <option value="googlepay">Google Pay</option>
+                                                <option value="paytm">Paytm</option>
+                                                <option value="Mobikwik">Mobikwik</option>
+                                                <option value="Netbanking">Netbanking</option>
+                                              </select>
+                                        </div>
+                                    </div>
+                                </div> -->
+
+
+                                <div class="container mt-4 pb-5 text-center">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <button class="btn btn-success" [disabled]="userForm.invalid" type="submit">Register</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
                         </div>
                     </div>
-                </div>
-            </form>
+                </form>
+            </div>
         </div>
     </div>
 </div>
