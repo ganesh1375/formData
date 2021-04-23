@@ -11,7 +11,7 @@ export class LoginComponent implements OnInit {
 
   constructor(private fb:FormBuilder, private _http:HttpClient) { }
    registrationFrom:any;
-
+   submitted:any=false;
   ngOnInit(): void {
 
     // this.registrationFrom=this.fb({
@@ -21,6 +21,7 @@ export class LoginComponent implements OnInit {
   onSubmit(userForm:any)
   {
     //console.log(userForm.value);
+    this.submitted=true;
     this.enroll(userForm).subscribe((data: any)=>console.log("success",data));
 
   }
